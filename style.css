@@ -1,59 +1,35 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  /* home page  */
-  
-  .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image1.jpg");
-    height: 85%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .hero-text {
-    text-align: left;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    padding: 0 700px 0 150px;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-  
-  .hero-text button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: rgb(243, 159, 4);
+body{
     text-align: center;
-    cursor: pointer;
-  
-  }
-  
-  .hero-text button:hover {
-    transition-delay: 10ms;
-    background-color: orangered;
-    color: white;
-  }
+}
 
+#title{
+    background-image: url(image1.jpg);
+    background-size: cover;
+    height: 582px; 
+}
 
-  /* Packages */
+.big-heading{   
+    margin-left: 35px;
+    margin-top: 70px;
+    font-size: 3.5em;
+    line-height: 1.25;
+    font-weight: 800;
+    color: azure;
+}
 
+.heading-para{
+    color: azure;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.container-fluid{
+    padding:10% 5% 15% 50%;
 
+}
 
-  /* Testimonials */
+.btn-title{
+    margin-top: 15px;
+    margin-left: 40px;
+}
 
-
-
-  /* Exploring */
-
-  
-
-  /* footer */
+/* pakages */
