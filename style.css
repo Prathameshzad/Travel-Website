@@ -1,35 +1,37 @@
 body{
-    text-align: center;
+  text-align: center;
 }
 
 #title{
-    background-image: url(image1.jpg);
-    background-size: cover;
-    height: 582px; 
+  background-image: url(image1.jpg);
+  background-size: cover;
+  height: 710px; 
 }
 
 .big-heading{   
-    margin-left: 35px;
-    margin-top: 70px;
-    font-size: 3.5em;
-    line-height: 1.25;
-    font-weight: 800;
-    color: azure;
+  margin-left: 35px;
+  margin-top: 70px;
+  font-size: 3.5em;
+  line-height: 1.25;
+  font-weight: 800;
+  color: azure;
 }
 
 .heading-para{
-    color: azure;
-    margin-left: 40px;
-    margin-top: 30px;
+  color: azure;
+  margin-left: 40px;
+  margin-top: 30px;
 }
-.container-fluid{
-    padding:10% 5% 15% 50%;
+/* .container-fluid{
+  padding:10% 5% 15% 50%;
 
-}
+} */
 
 .btn-title{
-    margin-top: 15px;
-    margin-left: 40px;
+  margin-top: 15px;
+  margin-left: 40px;
 }
-
-/* pakages */
+.nav-item{
+  font-size: 1.1em;
+  font-weight: 600;
+}
