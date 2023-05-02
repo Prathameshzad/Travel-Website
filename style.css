@@ -11,7 +11,7 @@ body{
 #title{
   background-image: url(image1.jpg);
   background-size: cover;
-  height: 710px; 
+  height: 625px; 
 }
 
 .big-heading{   
@@ -20,7 +20,7 @@ body{
   font-size: 3.5em;
   line-height: 1.25;
   font-weight: 800;
-  color: azure;
+  color: rgb(228, 228, 228);
 }
 
 .heading-para{
@@ -32,6 +32,190 @@ body{
 .btn-title{
   margin-top: 15px;
   margin-left: 40px;
+}
+
+/* packages */
+
+
+h2{
+	text-align: left;
+	margin-bottom: 5rem;
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+ 	margin: 2rem;
+   box-shadow: 5px 15px 25px #a29de6;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #a39ee6;
+}
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ffc107;
+	display: inline-block;
+	text-decoration: none;
+	/* background-color: #ffc107; */
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffc107;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+
+}
+
+.product a:hover{
+	transform: scale(1.1);
+  background-color: #ffc107;
+  color: black;
+}
+
+.divLoadMore{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.loadMore {
+  position: relative;
+  background: #000;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  transition: 0.2s;
+}
+
+.loadMore:hover {
+  
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 3.1rem;
+  background: var(--clr);
+  color: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+  animation: box 3s infinite;
+}
+
+.loadMore::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #ffc107;
+}
+
+.loadMore span {
+  position: relative;
+  z-index: 1;
+}
+.loadMore i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.loadMore i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.loadMore:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+.loadMore i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.loadMore:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+  100% {
+    box-shadow: #27272c;
+  }
+}
+
+/* travel with partner */
+.imgPartner{
+  background-image: url(trekingpartner.jpg);
+  background-size: cover;
 }
 
 /* footer */
@@ -72,3 +256,8 @@ ul{
   padding-left: 30px;
   font-size: 1.1em; 
 }
+
+.miniImageText{
+  font-size: 10px;
+}
+
